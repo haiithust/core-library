@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1010E6</color>
+    <color name="colorPrimaryDark">#1010E6</color>
+    <color name="colorAccent">#CC3DCC</color>
+
+    <color name="bg_gray">#E1E1E1</color>
+    <color name="bg_gray_border">#D7D7D7</color>
+    <color name="bg_gray_disabled">#E9E9E9</color>
+    <color name="bg_gray_divider">#D8DCDE</color>
+    <color name="bg_gray_dark">#7D7D7D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_green">#2E7D32</color>
+    <color name="bg_green_pressed">#802E7D32</color>
+    <color name="bg_green_light">#558B2F</color>
+    <color name="bg_blue">#3671A9</color>
+    <color name="bg_blue_blur">#EAEDEF</color>
+    <color name="bg_blue_light">#1675c9</color>
+    <color name="bg_blue_confirm">#00A2D3</color>
+    <color name="bg_blue_confirm_pressed">#247DC8</color>
+    <color name="bg_red">#C60B0B</color>
+    <color name="bg_red_pressed">#80C60B0B</color>
+
+    <color name="new_blue">#288BDE</color>
+    <color name="new_blue_10">#1A288BDE</color>
+    <color name="new_blue_light">#E5F3FF</color>
+    <color name="new_blue_70">#B3288BDE</color>
+    <color name="new_green">#00C94A</color>
+    <color name="new_black">#202325</color>
+    <color name="new_black_80">#CC202325</color>
+    <color name="new_black_40">#66202325</color>
+    <color name="new_black_30">#4D202325</color>
+    <color name="new_black_50">#80202325</color>
+    <color name="new_black_10">#1A202325</color>
+    <color name="new_red">#CC0201</color>
+    <color name="new_red_light">#FF3500</color>
+    <color name="new_dark_red">#962727</color>
+    <color name="new_dark_gray">#3D5164</color>
+    <color name="new_white_light">#fafcfd</color>
+    <color name="new_porcelain">#EAEDEF</color>
+    <color name="new_gray_light">#EBEBF1</color>
+    <color name="new_gray_disable">#E9EDF2</color>
+    <color name="new_section">#F4F6F9</color>
+    <color name="new_gray">#1995a7bf</color>
+    <color name="new_orange">#FF9800</color>
+    <color name="new_orange_dark">#FF491D</color>
+    <color name="new_yellow_light">#FFFAEE</color>
+    <color name="new_orange_light">#C09271</color>
+    <color name="new_yellow">#FBF6D8</color>
+    <color name="new_brown">#794D29</color>
+    <color name="new_brown_50">#80794D29</color>
+
+    <color name="color_green">#689F38</color>
+
+    <color name="cornflower_blue">#669DF6</color>
+</resources>

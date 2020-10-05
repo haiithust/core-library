@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">>
+    <dimen name="txt_tiny">12sp</dimen>
+    <dimen name="txt_small">14sp</dimen>
+    <dimen name="txt_normal">16sp</dimen>
+    <dimen name="txt_normal_bot_offset">3dp</dimen>
+    <dimen name="txt_large">18sp</dimen>
+
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_normal">15dp</dimen>
+
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_new_small">5dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_new_normal">10dp</dimen>
+    <dimen name="margin_new_normal_x">20dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_new_large">14dp</dimen>
+    <dimen name="margin_normal_double">16dp</dimen>
+    <dimen name="margin_large_x">20dp</dimen>
+    <dimen name="margin_large_xx">24dp</dimen>
+    <dimen name="margin_large_xxx">32dp</dimen>
+
+    <dimen name="border_size_small">0.5dp</dimen>
+    <dimen name="border_size_normal">1dp</dimen>
+
+    <dimen name="corner_radius_small">2dp</dimen>
+    <dimen name="corner_radius_normal">4dp</dimen>
+    <dimen name="corner_radius_large">8dp</dimen>
+
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="new_divider_height">1dp</dimen>
+
+    <dimen name="nav_item_horizontal_padding">24dp</dimen>
+    <!-- Intrinsic height may vary. Use a large radius to ensure a semicircle. -->
+    <dimen name="nav_item_background_corner_radius_left">0dp</dimen>
+    <dimen name="nav_item_background_corner_radius_right">100dp</dimen>
+    <dimen name="nav_item_background_inset_left">0dp</dimen>
+    <dimen name="nav_item_background_inset_right">8dp</dimen>>
+</resources>

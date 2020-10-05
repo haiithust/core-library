@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PaddingSection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/core_bg_ripple_white"
+    android:drawablePadding="@dimen/margin_large"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:textAppearance="@style/TextBlack14"
+    tools:background="@color/white"
+    tools:drawableStart="@drawable/core_ic_menu"
+    tools:text="Option" />

@@ -1,0 +1,13 @@
+dependencies {
+    implementation libraries.dagger
+    implementation libraries.coreKtx
+    implementation libraries.retrofit
+    implementation libraries.retrofitGsonConverter
+    implementation libraries.rxJava2
+    implementation libraries.rxAndroid2
+    implementation libraries.constraintLayout
+    implementation libraries.recyclerview
+    implementation libraries.appcompatv7
+    implementation libraries.supportdesign
+    implementation libraries.swipeRefreshLayout
+}

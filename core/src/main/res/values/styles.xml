@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/new_blue</item>
+        <item name="colorPrimaryDark">@color/new_blue</item>
+        <item name="colorSecondary">@color/new_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="tabStyle">@style/Widget.Core.TabLayout</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="materialAlertDialogTheme">@style/AlertDialog.Theme</item>
+    </style>
+
+    <style name="AlertDialog.Theme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/AlertDialog.Style</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialog.TitleText</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialog.BodyText</item>
+    </style>
+
+    <style name="AlertDialog.TitleText" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+    </style>
+
+    <style name="AlertDialog.BodyText" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="AlertDialog.Style" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/AlertDialog.ShapeAppearance</item>
+    </style>
+
+    <style name="AlertDialog.ShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/corner_radius_large</item>
+    </style>
+
+    <style name="Widget.Core.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Core.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@null</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="tabIndicator">@drawable/tab_indicator</item>
+        <item name="tabUnboundedRipple">false</item>
+    </style>
+
+    <style name="TextBlack18Bold" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black</item>
+        <item name="android:textSize">@dimen/txt_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBlack16" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+
+    <style name="TextBlack16Bold" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBlack16O50" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_50</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+
+    <style name="TextBlack16O80" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_80</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+
+    <style name="TextBlack14" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black</item>
+        <item name="android:textSize">@dimen/txt_small</item>
+    </style>
+
+    <style name="TextBlack12" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black</item>
+        <item name="android:textSize">@dimen/txt_tiny</item>
+    </style>
+
+    <style name="TextBlack12O50" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_50</item>
+        <item name="android:textSize">@dimen/txt_tiny</item>
+    </style>
+
+    <style name="TextBlack14O30" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_30</item>
+        <item name="android:textSize">@dimen/txt_small</item>
+    </style>
+
+    <style name="TextBlack14O50" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_50</item>
+        <item name="android:textSize">@dimen/txt_small</item>
+    </style>
+
+    <style name="TextBlack14O80" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/new_black_80</item>
+        <item name="android:textSize">@dimen/txt_small</item>
+    </style>
+
+    <style name="PaddingSection">
+        <item name="android:paddingStart">@dimen/margin_large</item>
+        <item name="android:paddingEnd">@dimen/margin_large</item>
+        <item name="android:paddingTop">@dimen/margin_new_large</item>
+        <item name="android:paddingBottom">@dimen/margin_new_large</item>
+    </style>
+
+    <style name="FullScreenDialogFragment">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowEnterAnimation">@anim/core_anim_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/core_anim_top_down</item>
+    </style>
+
+    <style name="NormalDialog" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>
