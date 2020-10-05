@@ -1,4 +1,4 @@
-package ithust.hai.core
+package ithust.hai.demo
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
