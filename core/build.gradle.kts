@@ -43,8 +43,8 @@ android {
 }
 
 dependencies {
-    api(platform(project(":core:depconstraints")))
-    kapt(platform(project(":core:depconstraints")))
+    api(platform(project(":depconstraints")))
+    kapt(platform(project(":depconstraints")))
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Libs.KOTLIN_STDLIB)
