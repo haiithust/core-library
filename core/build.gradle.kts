@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.COMPILE_SDK)
+    compileSdkVersion(29)
 
     defaultConfig {
-        minSdkVersion(Versions.MIN_SDK)
-        targetSdkVersion(Versions.TARGET_SDK)
+        minSdkVersion(21)
+        targetSdkVersion(29)
     }
 
     buildTypes {
@@ -43,26 +43,23 @@ android {
 }
 
 dependencies {
-    api(platform(project(":depconstraints")))
-    kapt(platform(project(":depconstraints")))
-
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(Libs.KOTLIN_STDLIB)
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.10")
     api("com.jakewharton.timber:timber:4.7.1")
 
-    api(Libs.ACTIVITY_KTX)
-    api(Libs.FRAGMENT_KTX)
-    api(Libs.CONSTRAINT_LAYOUT)
-    api(Libs.MATERIAL)
-    api(Libs.APPCOMPAT)
+    api("androidx.activity:activity-ktx:1.1.0")
+    api("androidx.fragment:fragment-ktx:1.2.5")
+    api("androidx.constraintlayout:constraintlayout:2.0.4")
+    api("com.google.android.material:material:1.2.1")
+    api("androidx.appcompat:appcompat:1.2.0")
 
-    api(Libs.COROUTINES)
-    api(Libs.CORE_KTX)
-    api(Libs.LIFECYCLE_VIEW_MODEL_KTX)
-    api(Libs.LIFECYCLE_LIVE_DATA_KTX)
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    api("androidx.core:core-ktx:1.3.2")
+    api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
+    api("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0")
 
-    implementation(Libs.HILT_ANDROID)
-    kapt(Libs.HILT_COMPILER)
+    implementation("com.google.dagger:hilt-android:2.28-alpha")
+    kapt("com.google.dagger:hilt-android-compiler:2.28-alpha")
 }
 repositories {
     mavenCentral()
