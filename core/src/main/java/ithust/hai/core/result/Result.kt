@@ -32,3 +32,9 @@ inline fun <reified T> Result<T>.updateOnSuccess(liveData: MutableLiveData<T>) {
         liveData.value = data
     }
 }
+
+inline fun <reified T> Result<T>.updateOnSuccessEvent(liveData: MutableLiveData<Event<T>>) {
+    if (this is Result.Success) {
+        liveData.value = Event(data)
+    }
+}

@@ -5,13 +5,12 @@ plugins {
 
 val appcompat = "1.2.0"
 val activity = "1.1.0"
-val constraintLayout = "2.0.1"
-val core = "1.3.1"
-val coroutines = "1.3.4"
-val coroutinesTest = "1.3.4"
+val constraintLayout = "2.0.2"
+val core = "1.3.2"
+val coroutines = "1.3.9"
 val crashlytics = "17.2.1"
-val analytics = "17.5.0"
-val fragment = "1.2.4"
+val analytics = "17.6.0"
+val fragment = "1.2.5"
 val glide = "4.11.0"
 val gson = "2.8.6"
 val hilt = Versions.HILT
@@ -46,6 +45,7 @@ dependencies {
         api("${Libs.LIFECYCLE_LIVE_DATA_KTX}:$lifecycle")
         api("${Libs.LIFECYCLE_VIEW_MODEL_KTX}:$lifecycle")
         api("${Libs.LIFECYCLE_SERVICE}:$lifecycle")
+        api("${Libs.LIFECYCLE_PROCESS}:$lifecycle")
         api("${Libs.MATERIAL}:$material")
         api("${Libs.NAVIGATION_FRAGMENT_KTX}:${Versions.NAVIGATION}")
         api("${Libs.NAVIGATION_UI_KTX}:${Versions.NAVIGATION}")

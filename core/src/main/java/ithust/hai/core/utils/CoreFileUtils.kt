@@ -6,11 +6,14 @@ import android.net.Uri
 import androidx.annotation.WorkerThread
 import androidx.core.content.FileProvider
 import androidx.core.net.toFile
+import java.io.FileInputStream
+import java.io.InputStream
 
 /**
  * @author conghai on 9/7/20.
  */
 object CoreFileUtils {
+    const val VIDEO_MIME_TYPE = "video/mp4"
     fun getShareUri(context: Context, uri: Uri): Uri {
         val result = runCatching { uri.toFile() }
         if (result.isSuccess) {
@@ -31,6 +34,17 @@ object CoreFileUtils {
         return runCatching {
             context.contentResolver.openFileDescriptor(uri, "r")?.statSize ?: 0L
         }.getOrDefault(0L)
+    }
+
+    @WorkerThread
+    fun getInputStream(context: Context, uri: Uri): InputStream? {
+        val result = runCatching { FileInputStream(uri.toFile()) }
+        if (result.isFailure) {
+            runCatching {
+                return context.contentResolver.openInputStream(uri)
+            }
+        }
+        return result.getOrNull()
     }
 
     @WorkerThread

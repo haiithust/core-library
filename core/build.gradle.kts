@@ -21,6 +21,10 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     androidExtensions {
         isExperimental = true
     }
@@ -39,11 +43,12 @@ android {
 }
 
 dependencies {
-    api(platform(project(":depconstraints")))
-    kapt(platform(project(":depconstraints")))
+    api(platform(project(":core:depconstraints")))
+    kapt(platform(project(":core:depconstraints")))
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Libs.KOTLIN_STDLIB)
+    api("com.jakewharton.timber:timber:4.7.1")
 
     api(Libs.ACTIVITY_KTX)
     api(Libs.FRAGMENT_KTX)

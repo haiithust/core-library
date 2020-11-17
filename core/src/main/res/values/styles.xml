@@ -130,8 +130,8 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowEnterAnimation">@anim/core_anim_bottom_up</item>
-        <item name="android:windowExitAnimation">@anim/core_anim_top_down</item>
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_top_down</item>
     </style>
 
     <style name="NormalDialog" parent="android:Theme.Material.Dialog.Alert">

@@ -1,4 +1,5 @@
 <resources>
+    <string name="core_done">Done</string>
     <string name="core_cancel">Cancel</string>
     <string name="core_ok">OK</string>
 </resources>

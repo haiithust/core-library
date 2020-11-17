@@ -1,0 +1,5 @@
+<resources>
+    <string name="core_done">Xong</string>
+    <string name="core_cancel">Hủy bỏ</string>
+    <string name="core_ok">Xác nhận</string>
+</resources>

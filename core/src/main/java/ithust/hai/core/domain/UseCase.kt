@@ -1,8 +1,9 @@
 package ithust.hai.core.domain
 
+import ithust.hai.core.result.Result
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import ithust.hai.core.result.Result
+import timber.log.Timber
 
 abstract class UseCase<in P, R>(private val coroutineDispatcher: CoroutineDispatcher) {
     suspend operator fun invoke(parameters: P): Result<R> {
@@ -13,6 +14,7 @@ abstract class UseCase<in P, R>(private val coroutineDispatcher: CoroutineDispat
                 }
             }
         } catch (e: Exception) {
+            Timber.e(e)
             Result.Error(e)
         }
     }
