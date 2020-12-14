@@ -65,6 +65,8 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:2.28-alpha")
     kapt("com.google.dagger:hilt-android-compiler:2.28-alpha")
+
+    implementation("com.google.android.play:core-ktx:1.8.1")
 }
 repositories {
     mavenCentral()
