@@ -65,7 +65,7 @@ class MyAppUpdateManager @Inject constructor(
     }
 
     // activity.getString(R.string.app_has_been_downloaded)
-    fun showCompleteUpdate(view: View, anchorView: View, message: String, action: String) {
+    fun showCompleteUpdate(view: View, anchorView: View?, message: String, action: String) {
         Snackbar.make(
             view,
             message,
