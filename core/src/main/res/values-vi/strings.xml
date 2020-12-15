@@ -2,4 +2,11 @@
     <string name="core_done">Xong</string>
     <string name="core_cancel">Hủy bỏ</string>
     <string name="core_ok">Xác nhận</string>
+    <string name="core_app_center">Thêm ứng dụng</string>
+    <string name="core_recorder_pro_name">Siêu Ghi Âm Bí Mật</string>
+    <string name="core_recorder_pro_desc">Ghi âm dễ dàng và hiệu quả với định dạng Mp3 và chế độ bí mật</string>
+    <string name="core_baby_care_name">Bé Phát Triển</string>
+    <string name="core_baby_care_desc">Theo dõi sự phát triển của con bạn theo tháng dựa trên dữ liệu của WHO</string>
+    <string name="core_screen_recorder">Quay Màn Hình</string>
+    <string name="core_screen_recorder_desc">Quay màn hình dễ dàng với chất lượng cao và dễ sử dụng</string>
 </resources>

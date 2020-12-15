@@ -2,4 +2,11 @@
     <string name="core_done">Done</string>
     <string name="core_cancel">Cancel</string>
     <string name="core_ok">OK</string>
+    <string name="core_app_center">App Center</string>
+    <string name="core_recorder_pro_name">Recorder Pro</string>
+    <string name="core_recorder_pro_desc">Mp3 Voice recorder with high quality and secret mode</string>
+    <string name="core_baby_care_name">Baby Care</string>
+    <string name="core_baby_care_desc">Track your child growth by month base on WHO data</string>
+    <string name="core_screen_recorder">Screen Recorder</string>
+    <string name="core_screen_recorder_desc">Easy Screen recorder with high quality and easy to use</string>
 </resources>
