@@ -12,6 +12,7 @@
         android:background="@color/white">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="@string/core_app_center" />
