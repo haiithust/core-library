@@ -1,9 +1,9 @@
 plugins {
     id("com.android.library")
     kotlin("android")
-    kotlin("android.extensions")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    id("kotlin-parcelize")
     id("com.github.dcendents.android-maven")
 }
 
@@ -30,10 +30,6 @@ android {
         viewBinding = true
     }
 
-    androidExtensions {
-        isExperimental = true
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -49,7 +45,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.10")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
     api("com.jakewharton.timber:timber:4.7.1")
 
     api("androidx.activity:activity-ktx:1.1.0")
@@ -58,7 +54,7 @@ dependencies {
     api("com.google.android.material:material:1.2.1")
     api("androidx.appcompat:appcompat:1.2.0")
 
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
     api("androidx.core:core-ktx:1.3.2")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
     api("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0")

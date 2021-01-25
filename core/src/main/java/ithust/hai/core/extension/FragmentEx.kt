@@ -9,9 +9,7 @@ import androidx.annotation.IdRes
 import androidx.annotation.StringRes
 import androidx.core.app.ShareCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import ithust.hai.core.base.BaseFragment
 
 
 /**

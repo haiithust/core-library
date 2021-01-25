@@ -59,63 +59,6 @@
         <item name="tabUnboundedRipple">false</item>
     </style>
 
-    <style name="TextBlack18Bold" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black</item>
-        <item name="android:textSize">@dimen/txt_large</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextBlack16" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black</item>
-        <item name="android:textSize">@dimen/txt_normal</item>
-    </style>
-
-    <style name="TextBlack16Bold" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black</item>
-        <item name="android:textSize">@dimen/txt_normal</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextBlack16O50" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_50</item>
-        <item name="android:textSize">@dimen/txt_normal</item>
-    </style>
-
-    <style name="TextBlack16O80" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_80</item>
-        <item name="android:textSize">@dimen/txt_normal</item>
-    </style>
-
-    <style name="TextBlack14" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black</item>
-        <item name="android:textSize">@dimen/txt_small</item>
-    </style>
-
-    <style name="TextBlack12" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black</item>
-        <item name="android:textSize">@dimen/txt_tiny</item>
-    </style>
-
-    <style name="TextBlack12O50" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_50</item>
-        <item name="android:textSize">@dimen/txt_tiny</item>
-    </style>
-
-    <style name="TextBlack14O30" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_30</item>
-        <item name="android:textSize">@dimen/txt_small</item>
-    </style>
-
-    <style name="TextBlack14O50" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_50</item>
-        <item name="android:textSize">@dimen/txt_small</item>
-    </style>
-
-    <style name="TextBlack14O80" parent="@style/Widget.MaterialComponents.TextView">
-        <item name="android:textColor">@color/new_black_80</item>
-        <item name="android:textSize">@dimen/txt_small</item>
-    </style>
-
     <style name="PaddingSection">
         <item name="android:paddingStart">@dimen/margin_large</item>
         <item name="android:paddingEnd">@dimen/margin_large</item>
