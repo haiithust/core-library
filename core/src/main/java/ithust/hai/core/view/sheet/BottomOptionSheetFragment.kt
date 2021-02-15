@@ -30,7 +30,9 @@ class BottomOptionSheetFragment : BottomSheetDialogFragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return CoreFragmentBottomOptionSheetBinding.inflate(inflater, container, false).root
+        return CoreFragmentBottomOptionSheetBinding.inflate(inflater, container, false).also {
+            _binding = it
+        }.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
