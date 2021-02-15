@@ -45,7 +45,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.30")
     implementation("com.jakewharton.timber:timber:4.7.1")
 
     implementation("androidx.activity:activity-ktx:1.2.0")

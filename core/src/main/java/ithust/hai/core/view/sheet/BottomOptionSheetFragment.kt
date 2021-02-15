@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import ithust.hai.core.R
+import ithust.hai.core.databinding.CoreFragmentBottomOptionSheetBinding
 import ithust.hai.core.extension.initVertical
 import ithust.hai.core.utils.ExtraKey
 import java.util.*
@@ -18,22 +20,31 @@ import java.util.*
  * @author conghai on 8/26/20.
  */
 class BottomOptionSheetFragment : BottomSheetDialogFragment() {
+    private var _binding: CoreFragmentBottomOptionSheetBinding? = null
+    private val binding: CoreFragmentBottomOptionSheetBinding
+        get() = _binding!!
+
     private val adapter = BottomOptionAdapter {
         listener.onOptionSelected(it)
         dismissAllowingStateLoss()
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.core_fragment_bottom_option_sheet, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        return CoreFragmentBottomOptionSheetBinding.inflate(inflater, container, false).root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<RecyclerView>(R.id.recycler_view).apply {
+        binding.recyclerView.apply {
             initVertical(context)
             adapter = this@BottomOptionSheetFragment.adapter
         }
-        view.findViewById<TextView>(R.id.tv_title).text = requireArguments().getString(ExtraKey.B)
+        val title = requireArguments().getString(ExtraKey.B)
+        binding.tvTitle.apply {
+            isVisible = title.isNullOrBlank().not()
+            text = title
+        }
+        binding.divider.isVisible = binding.tvTitle.isVisible
 
         val options = requireArguments().getParcelableArrayList<BottomOption>(ExtraKey.A).orEmpty()
         if (options.isNotEmpty()) {
@@ -56,11 +67,11 @@ class BottomOptionSheetFragment : BottomSheetDialogFragment() {
         }
 
     companion object {
-        fun getInstance(title: String, list: MutableList<BottomOption>) = BottomOptionSheetFragment().apply {
+        fun getInstance(title: String = "", list: MutableList<BottomOption>) = BottomOptionSheetFragment().apply {
             arguments = Bundle().apply {
                 putParcelableArrayList(
-                    ExtraKey.A,
-                    list as ArrayList<out Parcelable>
+                        ExtraKey.A,
+                        list as ArrayList<out Parcelable>
                 )
                 putString(ExtraKey.B, title)
             }
@@ -70,5 +81,5 @@ class BottomOptionSheetFragment : BottomSheetDialogFragment() {
 
 interface BottomOptionSelectListener {
     fun onOptionSelected(option: BottomOption)
-    fun onCancel()
+    fun onCancel() {}
 }
