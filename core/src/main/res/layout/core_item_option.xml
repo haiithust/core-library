@@ -8,7 +8,7 @@
     android:drawablePadding="@dimen/margin_large"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    android:textAppearance="@style/TextBlack14"
+    android:textAppearance="?attr/textAppearanceSubtitle2"
     tools:background="@color/white"
     tools:drawableStart="@drawable/core_ic_menu"
     tools:text="Option" />

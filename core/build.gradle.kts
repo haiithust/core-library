@@ -46,21 +46,21 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
-    api("com.jakewharton.timber:timber:4.7.1")
+    implementation("com.jakewharton.timber:timber:4.7.1")
 
-    api("androidx.activity:activity-ktx:1.1.0")
-    api("androidx.fragment:fragment-ktx:1.2.5")
-    api("androidx.constraintlayout:constraintlayout:2.0.4")
-    api("com.google.android.material:material:1.2.1")
-    api("androidx.appcompat:appcompat:1.2.0")
+    implementation("androidx.activity:activity-ktx:1.2.0")
+    implementation("androidx.fragment:fragment-ktx:1.3.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
+    implementation("com.google.android.material:material:1.3.0")
+    implementation("androidx.appcompat:appcompat:1.2.0")
 
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
-    api("androidx.core:core-ktx:1.3.2")
-    api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
-    api("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
+    implementation("androidx.core:core-ktx:1.3.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.0")
 
-    implementation("com.google.dagger:hilt-android:2.28-alpha")
-    kapt("com.google.dagger:hilt-android-compiler:2.28-alpha")
+    implementation("com.google.dagger:hilt-android:2.31-alpha")
+    kapt("com.google.dagger:hilt-android-compiler:2.31-alpha")
 
     implementation("com.google.android.play:core-ktx:1.8.1")
 }

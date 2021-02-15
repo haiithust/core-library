@@ -39,10 +39,6 @@ abstract class BaseBindingFullDialogFragment<B : ViewBinding> : DialogFragment()
         initUI()
         observer()
         registerEvents()
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
         loadData()
     }
 

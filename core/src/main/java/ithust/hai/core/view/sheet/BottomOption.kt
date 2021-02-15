@@ -2,7 +2,7 @@ package ithust.hai.core.view.sheet
 
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 /**
  * @author conghai on 8/26/20.
