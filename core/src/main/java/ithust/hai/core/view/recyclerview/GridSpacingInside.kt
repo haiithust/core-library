@@ -26,7 +26,7 @@ class GridSpacingInside(private val spanCount: Int, private val spacing: Int) : 
             }
         }
         outRect.top = spacing
-        if (position >= parent.adapter!!.itemCount - spanCount) {
+        if (position > parent.adapter!!.itemCount - spanCount) {
             outRect.bottom = spacing
         }
     }
