@@ -2,17 +2,18 @@ plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("kapt")
-    id("dagger.hilt.android.plugin")
+    id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
-    id("com.github.dcendents.android-maven")
+    id("maven-publish")
 }
 
 android {
-    compileSdkVersion(29)
+    namespace = "ithust.hai.core"
+    compileSdkVersion(34)
 
     defaultConfig {
-        minSdkVersion(21)
-        targetSdkVersion(29)
+        minSdkVersion(24)
+        targetSdkVersion(34)
     }
 
     buildTypes {
@@ -31,13 +32,13 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
         val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-        options.jvmTarget = "1.8"
+        options.jvmTarget = "17"
     }
 
     resourcePrefix("core_")
@@ -59,8 +60,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.3.0")
 
-    implementation("com.google.dagger:hilt-android:2.31-alpha")
-    kapt("com.google.dagger:hilt-android-compiler:2.31-alpha")
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
 
     implementation("com.google.android.play:core-ktx:1.8.1")
 }
