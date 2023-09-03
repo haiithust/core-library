@@ -68,3 +68,17 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            create<MavenPublication>("release") {
+                from(components["java"])
+                groupId = "com.github.haiithust"
+                artifactId = "core"
+                version = "1.0.17"
+            }
+        }
+    }
+}
