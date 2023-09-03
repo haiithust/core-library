@@ -74,7 +74,7 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             create<MavenPublication>("release") {
-                from(components["java"])
+                from(components["release"])
                 groupId = "com.github.haiithust"
                 artifactId = "core"
                 version = "1.0.17"
