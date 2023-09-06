@@ -59,7 +59,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
 
     implementation("com.google.android.play:core-ktx:1.8.1")
-    implementation("com.google.dagger:hilt-core:2.44")
 }
 repositories {
     mavenCentral()
