@@ -59,6 +59,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
 
     implementation("com.google.android.play:core-ktx:1.8.1")
+    implementation("javax.inject:javax.inject:1")
 }
 repositories {
     mavenCentral()
