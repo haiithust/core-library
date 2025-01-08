@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "ithust.hai.core"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -58,7 +58,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 
-    implementation("com.google.android.play:core-ktx:1.10.3")
+    implementation("com.google.android.play:review-ktx:2.0.2")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
     implementation("javax.inject:javax.inject:1")
 }
 repositories {
