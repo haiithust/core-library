@@ -71,7 +71,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.haiithust"
                 artifactId = "core"
-                version = "1.0.17"
+                version = "2.0"
             }
         }
     }
