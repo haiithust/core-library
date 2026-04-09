@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'ithust.hai.demo'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "ithust.hai.demo"
@@ -26,9 +26,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = '17'
-    }
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {

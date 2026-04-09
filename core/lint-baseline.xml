@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 9.1.0" type="baseline" client="gradle" dependencies="false" name="AGP (9.1.0)" variant="all" version="9.1.0">
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`anim_bottom_up`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_anim_bottom_up`&apos; ?"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~">
+        <location
+            file="src/main/res/anim/anim_bottom_up.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`anim_top_down`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_anim_top_down`&apos; ?"
+        errorLine1="&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~">
+        <location
+            file="src/main/res/anim/anim_top_down.xml"
+            line="1"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`bg_border_red_rounded`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_bg_border_red_rounded`&apos; ?"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~~~">
+        <location
+            file="src/main/res/drawable/bg_border_red_rounded.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`bg_dialog_button`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_bg_dialog_button`&apos; ?"
+        errorLine1="&lt;shape android:shape=&quot;rectangle&quot;"
+        errorLine2=" ~~~~~">
+        <location
+            file="src/main/res/drawable/bg_dialog_button.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`dialog_button_color`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_dialog_button_color`&apos; ?"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2=" ~~~~~~~~">
+        <location
+            file="src/main/res/color/dialog_button_color.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`selector_selected_white`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_selector_selected_white`&apos; ?"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2=" ~~~~~~~~">
+        <location
+            file="src/main/res/color/selector_selected_white.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`selector_text_button_main`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_selector_text_button_main`&apos; ?"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2=" ~~~~~~~~">
+        <location
+            file="src/main/res/color/selector_text_button_main.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ResourceName"
+        message="Resource named &apos;`tab_indicator`&apos; does not start with the project&apos;s resource prefix &apos;`core_`&apos;; rename to &apos;`core_tab_indicator`&apos; ?"
+        errorLine1="&lt;inset"
+        errorLine2=" ~~~~~">
+        <location
+            file="src/main/res/drawable/tab_indicator.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="WrongConstant"
+        message="Must be one or more of: InputMethodManager.HIDE_IMPLICIT_ONLY, InputMethodManager.HIDE_NOT_ALWAYS"
+        errorLine1="        imm.hideSoftInputFromWindow(v.windowToken, InputMethodManager.RESULT_UNCHANGED_SHOWN)"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/UIUtils.kt"
+            line="17"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details"
+        errorLine1="    if (intent.resolveActivity(packageManager) != null) {"
+        errorLine2="               ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="110"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details"
+        errorLine1="            if (intent.resolveActivity(context.packageManager) != null) {"
+        errorLine2="                       ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/StoreUtil.kt"
+            line="14"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this method; see https://g.co/dev/packagevisibility for details"
+        errorLine1="                if (intent.resolveActivity(context.packageManager) != null) {"
+        errorLine2="                           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/StoreUtil.kt"
+            line="18"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.10.1 is available: 1.13.0"
+        errorLine1="    implementation(&quot;androidx.activity:activity-ktx:1.10.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="51"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.fragment:fragment-ktx than 1.8.6 is available: 1.8.9"
+        errorLine1="    implementation(&quot;androidx.fragment:fragment-ktx:1.8.6&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="52"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.9.1 is available: 2.10.0"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="59"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.9.1 is available: 2.10.0"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-livedata-ktx:2.9.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="60"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/view/sheet/BottomOptionAdapter.kt"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/promo/PromoAppAdapter.kt"
+            line="25"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This `ParcelFileDescriptor` should be freed up after use with `#close()`"
+        errorLine1="            context.contentResolver.openFileDescriptor(uri, &quot;r&quot;)?.statSize ?: 0L"
+        errorLine2="                                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/CoreFileUtils.kt"
+            line="35"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; `SDK_INT` is always >= 23"
+        errorLine1="        &lt;item name=&quot;android:windowLightStatusBar&quot; tools:targetApi=&quot;m&quot;>true&lt;/item>"
+        errorLine2="                                                  ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="13"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        message="Missing density variation folders in `src/main/res`: drawable-hdpi, drawable-mdpi, drawable-xxhdpi">
+        <location
+            file="src/main/res"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="        intent.data = Uri.parse(url)"
+        errorLine2="                      ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="76"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="        intent.data = Uri.parse(url)"
+        errorLine2="                      ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="76"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="    intent.data = Uri.parse(&quot;mailto:&quot;)"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="104"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="    intent.data = Uri.parse(&quot;mailto:&quot;)"
+        errorLine2="                  ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="104"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="        val intent = Intent(Intent.ACTION_DIAL, Uri.parse(&quot;tel:$number&quot;))"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="122"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(&quot;sms:$number&quot;))"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/extension/FragmentEx.kt"
+            line="136"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="            var intent = Intent(Intent.ACTION_VIEW, Uri.parse(&quot;market://details?id=$packageName&quot;))"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/StoreUtil.kt"
+            line="13"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `String.toUri` instead?"
+        errorLine1="                intent = Intent(Intent.ACTION_VIEW, Uri.parse(&quot;https://play.google.com/store/apps/details?id=$packageName&quot;))"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/ithust/hai/core/utils/StoreUtil.kt"
+            line="17"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/core_item_app.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+</issues>

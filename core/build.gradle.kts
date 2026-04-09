@@ -1,16 +1,15 @@
 plugins {
     id("com.android.library")
-    id("kotlin-parcelize")
+    id("org.jetbrains.kotlin.plugin.parcelize")
     id("maven-publish")
 }
 
 android {
     namespace = "ithust.hai.core"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 35
     }
 
     buildTypes {
@@ -28,16 +27,22 @@ android {
         viewBinding = true
     }
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+    resourcePrefix = "core_"
 
-    resourcePrefix("core_")
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
